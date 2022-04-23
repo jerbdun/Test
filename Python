@@ -1,0 +1,93 @@
+Here is an inbrowser python enviroment. test shit, run it etc.     https://www.online-python.com/
+
+Here is the intro to python tutorial  https://vimeo.com/702265866
+
+Here is a great free resource for learning coding https://www.w3schools.com/python/default.asp
+
+here is some of the notes i took while the dude was teaching shit.
+
+# first_name = "Cook"
+# last_name = "Dalook"
+
+# comment example (hotkey is ctrl+/)
+
+# Print Statements
+# print(first_name,last_name)
+# print(2+2)
+
+# street_address = "123 Worcester Road, Seattle, WA"
+
+# age = 30
+# weight = 210.5
+# print (type(weight))
+# print(weight + 5)
+
+# loves_pizza = True
+# loves_tacos = True
+# loves_cheesecake = False
+
+# print(loves_pizza)
+# print (2+2 == 4)
+
+
+# grocery_list = ["macncheese", "Gatorade", "T-Bone", "Biscuits", "Gravy", 4, 44.4, False]
+
+# print(grocery_list[4])
+
+# grocery_list.append("Cherry Coke")
+
+
+
+# grocery_list[1] = "Lettuce"
+
+
+# print(grocery_list)
+
+# first_name = input("Please enter your first name:")
+# print("Hi, it is nice to meet you " + first_name + "!")
+# print("Hi, it is nice to meet you {first_name}!")
+# 
+
+
+# age = 22
+
+# if age > 21:
+#     print("Here is your drink friend")
+# else:
+#     print("Sorry friend, you're too young")
+
+
+# Demo of ROCK PAPER SCISSORS
+
+import random
+
+
+choices = ["Rock", "Paper", "Scissors"]
+
+# User choices
+user_choice = input("Make your selection (Rock, Paper, Scissors")
+print(f"You chose {user_choice}" )
+
+#computer choice
+comp_choice = random.choice(choices)
+print (f"The computer chose {comp_choice}")
+
+# Decide who wins
+
+if user_choice != "Rock" and user_choice != "Paper" and user_choice != "Scissors":
+    print("Invalid selection. Please choose from (Rock, Paper, or Scissors")
+    
+elif user_choice == comp_choice:
+    print("You Tied, try again!")
+    
+elif user_choice == "Rock" and comp_choice == "Scissors":
+    print("You win!")
+    
+elif user_choice == "Paper" and comp_choice =="Rock":
+    print("You win!")
+    
+elif user_choice == "Scissors" and comp_choice =="Paper":
+    print("You win!")    
+    
+else:
+    print("You lose")   
